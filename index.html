@@ -3,19 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pankaj Sharma - Portfolio</title>
+  <title>Pankaj Sharma — Senior Android Developer</title>
+  <link rel="icon" type="image/jpeg" href="profile.jpg">
+  <link rel="apple-touch-icon" href="profile.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-<body id="mainBody">
+<body>
 
   <!-- Header -->
   <header id="main-header">
     <nav id="main-nav">
-      <h1 id="site-title">Pankaj Sharma</h1>
+      <a href="#hero" id="site-logo">PS</a>
       <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </div>
       <ul id="nav-links">
         <li><a href="#about">About</a></li>
@@ -23,150 +26,484 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Intro Section -->
-  <div id="intro-section">
-    <div id="intro-content">
-      <div id="intro-text">
-        <h2 id="about">Introduction</h2> 
-        <p>
-          Hi, my name is Pankaj Sharma. I’m an Android Developer with over 7 years of experience 
-          in building native Android applications using the latest technologies like Kotlin, Jetpack Compose, 
-          Coroutines, and Firebase. I enjoy creating scalable, user-friendly apps. 
-          Outside of work, I like going to the gym, practicing yoga, and exploring new ideas for personal projects. 
-        </p>
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="hero-ring r1"></div>
+      <div class="hero-ring r2"></div>
+      <div class="hero-ring r3"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for opportunities
       </div>
-      <div id="intro-image">
-        <img src="profile.jpg" alt="Profile Photo">
+      <h1 class="hero-title">
+        <span class="hero-name">Pankaj Sharma</span>
+        <span class="hero-role">Senior Android <em>Developer</em></span>
+      </h1>
+      <p class="hero-desc">8+ years crafting scalable, high-performance Android applications. Kotlin-first. Architecture-obsessed. Real-time systems specialist.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-ghost">Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">8+</span><span class="stat-label">Years Experience</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">500K+</span><span class="stat-label">App Downloads</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">4.8★</span><span class="stat-label">App Store Rating</span></div>
       </div>
     </div>
-  </div>
+    <div class="hero-image-wrap">
+      <div class="hero-image-ring"></div>
+      <img src="profile.jpg" alt="Pankaj Sharma" id="hero-photo">
+      <div class="hero-chip chip-kotlin">Kotlin</div>
+      <div class="hero-chip chip-compose">Jetpack Compose</div>
+      <div class="hero-chip chip-mvvm">MVVM</div>
+    </div>
+  </section>
 
-  <!-- Skills Section -->
+  <!-- About -->
+  <section id="about">
+    <div class="section-inner about-inner">
+      <div class="section-label">Who I Am</div>
+      <h2 class="section-title">Building Android apps<br>that people <em>love</em></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Hi, I'm Pankaj — a Senior Android Developer with over 8 years of experience turning complex requirements into elegant, high-performance mobile experiences. I'm based in Bangalore and currently building enterprise-grade solutions at TalentBridge Technologies.</p>
+          <p>My passion lies at the intersection of clean architecture and delightful UX. I specialise in real-time systems, location-based services, and media-driven applications — crafting code that's as maintainable as it is performant.</p>
+          <p>Outside of code, you'll find me at the gym, practising yoga, or exploring personal project ideas over a good cup of filter coffee.</p>
+          <div class="about-links">
+            <a href="https://www.linkedin.com/in/pankajsharmaandroiddeveloper/" target="_blank" class="social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="mailto:pankajsharmaadadi@gmail.com" class="social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Email
+            </a>
+            <a href="https://github.com/" target="_blank" class="social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="about-cards">
+          <div class="about-card ac-green">
+            <div class="ac-icon">🏗️</div>
+            <h3>Clean Architecture</h3>
+            <p>MVVM, Clean Architecture, and modular design patterns for maintainable, testable codebases.</p>
+          </div>
+          <div class="about-card ac-blue">
+            <div class="ac-icon">⚡</div>
+            <h3>Real-Time Systems</h3>
+            <p>MQTT, WebSockets, and Firebase for sub-second latency in live collaboration and tracking apps.</p>
+          </div>
+          <div class="about-card ac-amber">
+            <div class="ac-icon">📍</div>
+            <h3>Location & Maps</h3>
+            <p>High-accuracy geo-tracking, Google Maps integration, and battery-optimised location services.</p>
+          </div>
+          <div class="about-card ac-coral">
+            <div class="ac-icon">🎨</div>
+            <h3>Modern UI</h3>
+            <p>Jetpack Compose and Material Design 3 for beautiful, adaptive interfaces across screen sizes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
   <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Programming Languages:</strong> Kotlin, Java</li>
-      <li><strong>Mobile Development:</strong> Android (Native), Jetpack Compose</li>
-      <li><strong>Architecture & Tools:</strong> MVVM, Clean Architecture, Hilt/Dagger, Coroutines</li>
-      <li><strong>Databases & APIs:</strong> Room, Firebase, REST APIs</li>
-      <li><strong>Version Control:</strong> Git, GitHub</li>
-      <li><strong>Other Skills:</strong> UI/UX Design, Debugging, Agile Methodologies</li>
-    </ul>
+    <div class="section-inner">
+      <div class="section-label">Technical Skills</div>
+      <h2 class="section-title">My <em>stack</em></h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <div class="skill-group-icon">💻</div>
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span class="tag tag-primary">Kotlin</span>
+            <span class="tag tag-primary">Java</span>
+            <span class="tag">XML</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-icon">🏛️</div>
+          <h3>Architecture & Core</h3>
+          <div class="skill-tags">
+            <span class="tag tag-primary">Jetpack Compose</span>
+            <span class="tag tag-primary">MVVM</span>
+            <span class="tag tag-primary">Clean Architecture</span>
+            <span class="tag">Material Design 3</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-icon">🔄</div>
+          <h3>Async & Networking</h3>
+          <div class="skill-tags">
+            <span class="tag tag-primary">Coroutines</span>
+            <span class="tag tag-primary">Flow</span>
+            <span class="tag">Retrofit</span>
+            <span class="tag">OkHttp</span>
+            <span class="tag">Ktor</span>
+            <span class="tag">MQTT</span>
+            <span class="tag">REST APIs</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-icon">🗄️</div>
+          <h3>Data & Backend</h3>
+          <div class="skill-tags">
+            <span class="tag">Room</span>
+            <span class="tag">SQLite</span>
+            <span class="tag tag-primary">Firebase Auth</span>
+            <span class="tag">Firestore</span>
+            <span class="tag">Analytics</span>
+            <span class="tag">Crashlytics</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-icon">🛠️</div>
+          <h3>Tools & DI</h3>
+          <div class="skill-tags">
+            <span class="tag">Dagger Hilt</span>
+            <span class="tag">Koin</span>
+            <span class="tag">Git</span>
+            <span class="tag">Gradle</span>
+            <span class="tag">JUnit</span>
+            <span class="tag">Android Studio</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-icon">🤝</div>
+          <h3>Process</h3>
+          <div class="skill-tags">
+            <span class="tag">Agile / Scrum</span>
+            <span class="tag">Code Review</span>
+            <span class="tag">CI/CD</span>
+            <span class="tag">Technical Mentoring</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Projects Section -->
+  <!-- Projects -->
   <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-container">
-      <div class="project-card">
-        <h3>OdigoLive</h3>
-        <p>A social networking app built with Kotlin and Firebase, enabling live streaming and chat features.</p>
-        <a href="#" class="project-link">View Project</a>
-      </div>
-      <div class="project-card">
-        <h3>Melisten</h3>
-        <p>A music streaming app with offline support, built using MVVM, Room DB, and Jetpack Compose.</p>
-        <a href="#" class="project-link">View Project</a>
-      </div>
-      <div class="project-card">
-        <h3>Roka</h3>
-        <p>A matrimonial app with scalable architecture, integrating chat, profiles, and notifications.</p>
-        <a href="#" class="project-link">View Project</a>
+    <div class="section-inner">
+      <div class="section-label">Featured Work</div>
+      <h2 class="section-title">Projects I've <em>built</em></h2>
+      <div class="projects-grid">
+
+        <div class="project-card pc-featured">
+          <div class="project-header">
+            <div class="project-icon pi-teal">📡</div>
+            <span class="project-badge">Current · TalentBridge</span>
+          </div>
+          <h3>OdigoCMS & OdigoLive</h3>
+          <p>Enterprise content management and real-time collaboration platform with sub-second MQTT messaging, live location streaming for field-force teams, and Jetpack Compose UI delivering 30% reduction in code complexity.</p>
+          <div class="project-tags">
+            <span class="tag">Jetpack Compose</span>
+            <span class="tag">MQTT</span>
+            <span class="tag">Clean Architecture</span>
+            <span class="tag">Geo-tracking</span>
+          </div>
+          <div class="project-metrics">
+            <div class="metric"><span>30%</span> Less UI code</div>
+            <div class="metric"><span>&lt;1s</span> Latency</div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon pi-coral">🎵</div>
+            <span class="project-badge">Applify · 500K+ Downloads</span>
+          </div>
+          <h3>Me Listen</h3>
+          <p>Feature-rich media streaming app with offline support, built on MVVM + Room DB. Achieved 500K+ downloads with a 4.8-star rating on the Play Store.</p>
+          <div class="project-tags">
+            <span class="tag">MVVM</span>
+            <span class="tag">Room DB</span>
+            <span class="tag">Kotlin</span>
+            <span class="tag">Media APIs</span>
+          </div>
+          <div class="project-metrics">
+            <div class="metric"><span>500K+</span> Downloads</div>
+            <div class="metric"><span>4.8★</span> Rating</div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon pi-pink">💍</div>
+            <span class="project-badge">Applify</span>
+          </div>
+          <h3>Roka</h3>
+          <p>Social matchmaking and matrimonial app with real-time chat, profile management, and notification systems. Local sync via Room DB for seamless offline experience.</p>
+          <div class="project-tags">
+            <span class="tag">Room DB</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">Social Matching</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon pi-green">✅</div>
+            <span class="project-badge">Applify</span>
+          </div>
+          <h3>Organisaur</h3>
+          <p>Robust task management system with local synchronisation, offline-first design, and complex scheduling logic built using Room DB and Kotlin Coroutines.</p>
+          <div class="project-tags">
+            <span class="tag">Room DB</span>
+            <span class="tag">Coroutines</span>
+            <span class="tag">Offline-first</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon pi-amber">🚗</div>
+            <span class="project-badge">Aloha Industries</span>
+          </div>
+          <h3>Aloha Rider / Driver & Velo</h3>
+          <p>Full-featured ride-hailing apps with real-time live tracking, booking engine integration, Google Maps API, and asynchronous operations managed via RxJava.</p>
+          <div class="project-tags">
+            <span class="tag">Google Maps API</span>
+            <span class="tag">RxJava</span>
+            <span class="tag">Live Tracking</span>
+            <span class="tag">Retrofit</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Experience Section -->
+  <!-- Experience -->
   <section id="experience">
-    <h2>Experience</h2>
-    <div class="experience-container">
-      <div class="experience-card">
-        <h3>Talentbridge Technologies Pvt. Ltd.</h3>
-        <span class="exp-duration">Jan 2024 – Present</span>
-        <p>Building scalable apps with Jetpack Compose, MVVM, and Firebase. Focus on performance and offline-first design.</p>
-      </div>
-      <div class="experience-card">
-        <h3>Applify Pvt. Ltd.</h3>
-        <span class="exp-duration">May 2020 – Dec 2023</span>
-        <p>Led Android projects, implemented modern architectures, and enhanced UI/UX with Compose.</p>
-      </div>
-      <div class="experience-card">
-        <h3>Aloha Industries Pvt. Ltd.</h3>
-        <span class="exp-duration">Dec 2018 – Apr 2020</span>
-        <p>Developed Android apps in Java/Kotlin, integrated APIs, and improved app performance.</p>
-      </div>
-      <div class="experience-card">
-        <h3>Primotech Pvt. Ltd.</h3>
-        <span class="exp-duration">Jan 2018 – Nov 2018</span>
-        <p>Started as an intern, contributed to Android app development, UI, and debugging.</p>
+    <div class="section-inner">
+      <div class="section-label">Career</div>
+      <h2 class="section-title">Work <em>experience</em></h2>
+      <div class="timeline">
+
+        <div class="timeline-item active">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Senior Android Developer</h3>
+                <p class="timeline-company">TalentBridge Technologies Pvt. Ltd.</p>
+              </div>
+              <span class="timeline-date">Jan 2024 – Present</span>
+            </div>
+            <ul class="timeline-points">
+              <li>Spearheaded development of OdigoCMS using Jetpack Compose and modern architecture, achieving 30% reduction in UI code complexity.</li>
+              <li>Engineered real-time collaboration feature for OdigoLive using MQTT for sub-second latency in secure messaging and location streaming.</li>
+              <li>Optimised battery consumption for high-accuracy geo-tracking services for field-force mobile devices.</li>
+            </ul>
+            <div class="timeline-skills">
+              <span class="tag">Jetpack Compose</span><span class="tag">MQTT</span><span class="tag">Geo-tracking</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Android Developer</h3>
+                <p class="timeline-company">Applify Pvt. Ltd.</p>
+              </div>
+              <span class="timeline-date">May 2020 – Dec 2023</span>
+            </div>
+            <ul class="timeline-points">
+              <li>Developed core functionality for Me Listen — a media streaming app achieving 500K+ downloads and 4.8-star rating.</li>
+              <li>Implemented social matchmaking logic for Roka and task management systems for Organisaur using Room DB for local synchronisation.</li>
+              <li>Migrated critical legacy modules to Kotlin and MVVM, improving code testability and reducing production crash frequency.</li>
+            </ul>
+            <div class="timeline-skills">
+              <span class="tag">Kotlin</span><span class="tag">MVVM</span><span class="tag">Room DB</span><span class="tag">Firebase</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Android Developer</h3>
+                <p class="timeline-company">Aloha Industries Pvt. Ltd.</p>
+              </div>
+              <span class="timeline-date">Dec 2018 – Apr 2020</span>
+            </div>
+            <ul class="timeline-points">
+              <li>Developed and maintained core functionality for Aloha Rider/Driver and Velo apps, including live tracking, booking engine, and Google Maps API.</li>
+              <li>Enhanced app network performance using Retrofit and OkHttp; managed async operations with RxJava.</li>
+            </ul>
+            <div class="timeline-skills">
+              <span class="tag">RxJava</span><span class="tag">Google Maps</span><span class="tag">Retrofit</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Android Developer</h3>
+                <p class="timeline-company">Primotech Pvt. Ltd.</p>
+              </div>
+              <span class="timeline-date">Jan 2018 – Dec 2018</span>
+            </div>
+            <ul class="timeline-points">
+              <li>Gained foundational expertise in Android SDK, Java, and XML layouts. Successfully transitioned into a full-time developer role.</li>
+            </ul>
+            <div class="timeline-skills">
+              <span class="tag">Java</span><span class="tag">Android SDK</span><span class="tag">XML</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Education Section -->
+  <!-- Education -->
   <section id="education">
-    <h2>Education</h2>
-    <div class="education-container">
-      <div class="education-card">
-        <h3>MCA</h3>
-        <span class="edu-duration">Aug 2013 – Jun 2015</span>
-        <p>IET Bhaddal Technical Campus</p>
-      </div>
-      <div class="education-card">
-        <h3>BCA</h3>
-        <span class="edu-duration">Aug 2009 – Jun 2013</span>
-        <p>DAV College Kangra</p>
+    <div class="section-inner">
+      <div class="section-label">Education</div>
+      <h2 class="section-title">Academic <em>background</em></h2>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-icon">🎓</div>
+          <div>
+            <h3>Master of Computer Applications (MCA)</h3>
+            <p class="edu-institution">IET Bhaddal Technical Campus, Ropar</p>
+            <span class="edu-year">2013 – 2015</span>
+          </div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon">📚</div>
+          <div>
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+            <p class="edu-institution">DAV College, Kangra</p>
+            <span class="edu-year">2009 – 2013</span>
+          </div>
+        </div>
+        <div class="edu-card cert-card">
+          <div class="edu-icon">🏅</div>
+          <div>
+            <h3>Kotlin for Android Developers</h3>
+            <p class="edu-institution">Udemy Certification</p>
+            <span class="edu-year">2023</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact -->
   <section id="contact">
-    <h2>Contact</h2>
-    <div class="contact-container">
-      <div class="contact-info">
-        <p>I am always open to discussing Android development, innovative solutions, and collaboration opportunities. Let’s connect and build something impactful.</p>
-        <p><strong>Email:</strong> pankajsharmaadadi@gmail.com</p>
-        <p><strong>Phone:</strong> +91 9459712025</p>
-        <p><strong>Location:</strong> Bangalore, India</p>
+    <div class="section-inner">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">Let's work <em>together</em></h2>
+      <div class="contact-grid">
+        <div class="contact-left">
+          <p class="contact-intro">I'm always open to discussing Android development challenges, innovative product ideas, and exciting collaboration opportunities. Let's build something great.</p>
+          <div class="contact-details">
+            <a href="mailto:pankajsharmaadadi@gmail.com" class="contact-item">
+              <div class="contact-item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <p class="ci-label">Email</p>
+                <p class="ci-value">pankajsharmaadadi@gmail.com</p>
+              </div>
+            </a>
+            <a href="tel:+919459712025" class="contact-item">
+              <div class="contact-item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.62 1.21h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6.09 6.09l.87-.87a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <p class="ci-label">Phone</p>
+                <p class="ci-value">+91 9459712025</p>
+              </div>
+            </a>
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <p class="ci-label">Location</p>
+                <p class="ci-value">Bangalore, India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary form-submit">Send Message →</button>
+            <p id="formMessage" class="form-message"></p>
+          </form>
+        </div>
       </div>
-      <form id="contactForm" class="contact-form">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Enter your name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
-        </div>
-        <button type="submit" class="contact-btn">Send Message</button>
-        <p id="formMessage" style="margin-top:10px;"></p>
-      </form>
     </div>
   </section>
 
-  <!-- Footer Section -->
+  <!-- Footer -->
   <footer id="main-footer">
-    <div class="footer-content">
-      <p>&copy; 2025 Pankaj Sharma. All rights reserved.</p>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-logo">PS</span>
+        <p>Senior Android Developer · Bangalore, India</p>
+      </div>
       <ul class="footer-links">
         <li><a href="https://www.linkedin.com/in/pankajsharmaandroiddeveloper/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/" target="_blank">GitHub</a></li>
         <li><a href="mailto:pankajsharmaadadi@gmail.com">Email</a></li>
-        <li><a href="#contact">Contact</a></li>
       </ul>
+      <p class="footer-copy">© 2025 Pankaj Sharma. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script type="module" src="script.js"></script>
 </body>
 </html>
